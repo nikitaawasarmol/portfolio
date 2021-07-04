@@ -1,0 +1,443 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&family=Source+Sans+Pro:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Source+Sans+Pro:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,500&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+
+html, body {
+    height: 100%;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+.fa-bars {
+   
+    transition: 0.3s;
+}
+.fa-times {
+    transition: 0.3s;  
+   
+}
+
+
+.aboutmeheading, .projectheading, .contactheading {
+    /* top: 50%;
+    left: -30%;
+    transform: translateY(60%); */
+    font-family: 'Fredoka One', cursive;
+    opacity: 0.1;
+    top: 50%;
+    
+    transform: translate(0%, 40%);
+    font-size: 9vw;
+    align-items: center;
+    text-align: center;
+}
+.projectheading {
+    transform: translate(0%, 30%);
+}
+.projectheadingpages {
+    font-size: 6vw;
+    font-family: 'Fredoka One', cursive;
+    opacity: 0.1;
+   
+    align-items: center;
+    text-align: center;
+}
+.aboutmeheading h1 {
+    background: linear-gradient(to bottom, #000000 10%, #fdfdfd 90%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+
+}
+
+.projectheading h1 {
+    background: linear-gradient(to bottom, #000000 10%, #fdfdfd 90%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+    
+}
+
+.contactheading h1 {
+    background: linear-gradient(to bottom, #000000 10%, #fdfdfd 90%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+.Contact {
+    margin-top: 4%;
+}
+.fa-solid {
+    color: black;
+}
+.fa-github:hover, .fa-link:hover {
+    color: #ff31b0;
+    transition:  0.3s;
+}
+
+.fa-linkedin:hover , .fa-envelope:hover , .fa-instagram:hover, .fa-facebook:hover {
+    transition: 0.5s;
+}
+/* .fa-link {
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    
+} */
+.heading , h1 , .aboutmeheading, .projectheading, .contactheading {
+    /* align-items: center;
+    text-align: center; */
+    
+}
+.heading > h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 6vw;
+    align-items: center;
+    text-align: center;
+    animation: Slide_Up 1.4s ease-out ; /* animation */
+}
+.me > h3 {
+    animation: Slide_Up 1.4s ease-out;
+}
+
+
+
+/* text animation */
+@keyframes Slide_Up {
+    0% {
+        transform: translateY(90px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+section {
+    animation: transitionin 0.98s ease-in;
+}
+
+@keyframes transitionin {
+    from {
+        opacity: 0;
+        transform: rotateX(-10deg);
+    }
+    to {
+        opacity: 1;
+        transform: rotateX(0);
+    }
+}
+span {
+   
+    font-weight: 600;
+    font-family: 'Raleway', sans-serif;
+    
+}
+/* .projectbox_content {
+font-family: 'Source Sans Pro', sans-serif;
+font-weight: 200;
+} */
+.description, .projectbox_content > h3 {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 2vw;
+    align-items: center;
+    text-align: center;
+    font-weight: 500;
+}
+.projectbox_content > h6 {
+    text-align: center;
+}
+.About > .description {
+    padding: 10px;
+    font-size: 1.5vw;
+    z-index: 1;
+}
+.projectbox_wrapper {
+    display: flex;
+     justify-content: center;
+     flex-wrap: wrap;
+     /* z-index: 1; */
+     
+     
+}
+
+/* animation */
+/* .aboutmeheading h1 {
+    background-color: red;
+} */
+.projectbox {
+    padding: 30px;
+    margin:20px;
+    min-height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 10rem; 
+    z-index: 1;
+    /* box-shadow: 0px 2px 13px -4px rgba(102, 100, 100, 0.75); */
+}
+
+.projectbox:first-child:hover, .projectbox:nth-child(2):hover,
+.projectbox:nth-child(3):hover, .projectbox:nth-child(4):hover,
+.projectbox:nth-child(5):hover,.projectbox:nth-child(6):hover, .projectbox:nth-child(7):hover {
+    background: black;
+    color: blanchedalmond;
+    box-shadow: 0px 10px 33px -4px rgba(14, 13, 13);
+    border-bottom: 6px double white;
+    border-left: 3px double white;
+    transition: 0.2s;
+}
+
+/* .projectbox:first-child:hover .fa-github {
+    color: white;
+} 
+
+.projectbox:first-child:hover .fa-link {
+    color: white;
+} */
+.projectbox:first-child, .projectbox:nth-child(2), .projectbox:nth-child(3) , .projectbox:nth-child(4) {
+     border-width: 5px;
+    border-style: solid gray; 
+   
+    
+}
+
+.projectbox:first-child {
+    /* border-color:rgb(0, 0, 0, 0.2) ; */
+    /* border-image: linear-gradient(45deg, rgb(255, 255, 255), rgba(57, 216, 178, 1) ) 1; */
+    /* border-color: rgb(87, 85, 85, 0.2); */
+    /* background-image: -webkit-gradient(linear, right bottom, left top, color-stop(0.93, rgb(246, 252, 252)), color-stop(0.47, #c32285));
+    background-image: -moz-linear-gradient(center bottom, rgb(223, 238, 238) 33%, #c32285 67% ); */
+    background: linear-gradient(180deg,#b1e5f9,#f4d2fe);
+}
+
+.projectbox:nth-child(2) {
+    /* border-image: linear-gradient(-25deg, rgb(243, 243, 242), rgba(57, 216, 178, 1)) 1; */
+    /* background-image: -webkit-gradient(linear, right bottom, left top, color-stop(0.93, rgb(246, 252, 252)), color-stop(0.47, rgb(0,255,255)));
+    background-image: -moz-linear-gradient(center bottom, rgb(223, 238, 238) 33%, rgb(0,255,255) 67% ); */
+    background: linear-gradient(80deg,#b1e5f9,#f4d2fe);
+}
+
+.projectbox:nth-child(3) {
+    /* border-image: linear-gradient(-55deg, rgba(57, 216, 178, 1), rgb(243, 243, 242)) 1; */
+    /* background-image: -webkit-gradient(linear, right bottom, left top, color-stop(0.93, rgb(246, 252, 252)), color-stop(0.47, rgb(0,255,255)));
+    background-image: -moz-linear-gradient(center bottom, rgb(223, 238, 238) 33%, rgb(0,255,255) 67% ); */
+    background: linear-gradient(360deg,#b1e5f9,#f4d2fe);
+}
+
+.projectbox:nth-child(4) {
+    /* border-image: linear-gradient(45deg, rgba(57, 216, 178, 1), rgb(243, 243, 242)) 1; */
+    /* background-image: -webkit-gradient(linear, right bottom, left top, color-stop(0.93, rgb(246, 252, 252)), color-stop(0.47, rgb(0,255,255)));
+    background-image: -moz-linear-gradient(center bottom, rgb(223, 238, 238) 33%, rgb(0,255,255) 67% ); */
+    background: linear-gradient(30deg,#b1e5f9,#f4d2fe);
+}
+.projectbox:nth-child(5) {
+    /* border-image: linear-gradient(45deg, rgba(57, 216, 178, 1), rgb(243, 243, 242)) 1; */
+    /* background-image: -webkit-gradient(linear, right bottom, left top, color-stop(0.93, rgb(246, 252, 252)), color-stop(0.47, rgb(0,255,255)));
+    background-image: -moz-linear-gradient(center bottom, rgb(223, 238, 238) 33%, rgb(0,255,255) 67% ); */
+    background: linear-gradient(69deg,#b1e5f9,#f4d2fe);
+}
+.projectbox:nth-child(6) {
+    /* border-image: linear-gradient(45deg, rgba(57, 216, 178, 1), rgb(243, 243, 242)) 1; */
+    /* background-image: -webkit-gradient(linear, right bottom, left top, color-stop(0.93, rgb(246, 252, 252)), color-stop(0.47, rgb(0,255,255)));
+    background-image: -moz-linear-gradient(center bottom, rgb(223, 238, 238) 33%, rgb(0,255,255) 67% ); */
+    background: linear-gradient(160deg,#b1e5f9,#f4d2fe);
+}
+.projectbox:nth-child(7) {
+    /* border-image: linear-gradient(45deg, rgba(57, 216, 178, 1), rgb(243, 243, 242)) 1; */
+    /* background-image: -webkit-gradient(linear, right bottom, left top, color-stop(0.93, rgb(246, 252, 252)), color-stop(0.47, rgb(0,255,255)));
+    background-image: -moz-linear-gradient(center bottom, rgb(223, 238, 238) 33%, rgb(0,255,255) 67% ); */
+    background: linear-gradient(130deg,#b1e5f9,#f4d2fe);
+}
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    flex-direction: column;
+}
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    flex-direction: column;
+}
+/* .projectbox a {
+    text-decoration: none;
+    font-size: 4vw;
+    color: white;
+    opacity: 0.8;
+    padding: 2rem;
+    letter-spacing: 0.4rem;
+} */
+
+i {
+    font-size: 3vw;
+    padding: 1rem;
+    color: rgb(90, 90, 90);
+}
+
+i:hover {
+    color: #39d8b2;
+}
+a {
+    text-decoration: none;
+    font-size: 4vw;
+    color: white;
+    opacity: 0.8;
+    padding: 2rem;
+    letter-spacing: 0.4rem;
+}
+
+nav {
+    background-color: rgba(0, 0, 0, .94);
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 998;
+    transition: all 0.5s ease-out;
+    transform-origin: top right;
+    text-transform: uppercase;
+}
+
+.resume a {
+    background-color: #39d8b2;
+    border-radius: 50px;
+    border: 3px solid  #22806a ;
+}
+.resume a:hover {
+    text-shadow: 0px 2px 10px #c32285;
+}
+.toggle {
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+}
+
+ul {
+    padding: 0;
+    list-style: none;
+    line-height: 10rem;
+    text-align: center;
+}
+
+nav a:hover, iframe:hover {
+    opacity: 1;
+    text-shadow: 0px 2px 10px #39d8b2;
+    transition: 0.5s;
+    
+}
+
+
+.contact_links > a i {
+    color: black;
+}
+.close-menu {
+    transform: scale(0.01);
+    opacity: 0;
+}
+.contact_links {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+   
+}
+
+.contact_links i {
+    font-size: 5vw;
+}
+.contact_links i:hover {
+    color:#ff31b0 ;
+}
+
+
+
+
+@media screen and (max-width: 820px) {
+    /* body {
+        background-color: brown;
+    } */
+    .Contact {
+        margin-top: 200%;
+    }
+    .Projects {
+        margin-top: 100%;
+    }
+
+}
+@media screen and (max-width: 854px) {
+    /* body {
+        background-color: yellowgreen;
+    } */
+    .heading > h1 {
+        font-size: 9vw;
+    }
+    .description > h3 {
+        font-size: 3vw;
+    }
+    i {
+        font-size: 5vw;
+    }
+    .projectbox_content > h3 {
+        font-size: 3vw ;
+    }
+    /* .Contact {
+        margin-top: 00%;
+    } */
+
+  
+    
+}
+
+@media screen and (max-width: 554px) {
+    /* body {
+        background-color: rgb(52, 54, 223);
+    } */
+    .heading > h1 {
+        font-size: 10vw;
+    }
+    main {
+        height: 100%;
+    }
+    section {
+        height: 150%;
+    }
+    .description > h3 {
+        font-size: 4vw;
+    }
+    i {
+        font-size: 6vw;
+    }
+    .projectbox_content > h3 {
+        font-size: 4vw ;
+    }
+    .contact_links i {
+        font-size: 7vw ;
+
+    }
+    .aboutmeheading h1, .projectheading h1, .contactheading h1{
+        font-size: 19vw;
+    }
+    .Contact {
+        margin-top: 400%;
+    }
+    .Projects {
+        margin-top: 200%;
+    }
+    
+}
