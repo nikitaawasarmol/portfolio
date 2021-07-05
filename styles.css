@@ -441,3 +441,34 @@ nav a:hover, iframe:hover {
     }
     
 }
+
+/* smaller sized phone */
+@media screen and (max-width: 458px) {
+    body {
+        background-color: orange;
+    }
+    main {
+        height: 100%;
+    }
+    .Projects {
+        margin-top: 500%;
+    }
+    .Contact {
+        margin-top: 900%;
+    }
+    nav {
+        height: 100%;
+    }
+    ul {
+        line-height: 6rem;
+    }
+}
+@media screen and (max-width: 294px) {
+    body {
+        background-color: orchid;
+    }
+
+    .Contact {
+        margin-top: 990%;
+    }
+}
