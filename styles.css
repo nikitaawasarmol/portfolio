@@ -444,9 +444,9 @@ nav a:hover, iframe:hover {
 
 /* smaller sized phone */
 @media screen and (max-width: 458px) {
-    body {
+/*     body {
         background-color: orange;
-    }
+    } */
     main {
         height: 100%;
     }
@@ -464,9 +464,9 @@ nav a:hover, iframe:hover {
     }
 }
 @media screen and (max-width: 294px) {
-    body {
+/*     body {
         background-color: orchid;
-    }
+    } */
 
     .Contact {
         margin-top: 990%;
