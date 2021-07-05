@@ -462,6 +462,13 @@ nav a:hover, iframe:hover {
     ul {
         line-height: 6rem;
     }
+    section {
+        height: 240%;
+    }
+
+    section > .basicjs {
+        height: 290%;
+    }
 }
 @media screen and (max-width: 294px) {
 /*     body {
